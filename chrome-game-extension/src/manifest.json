@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Game Extension",
+  "version": "1.0",
+  "description": "A simple game built as a Chrome extension.",
+  "permissions": [],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "script.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["style.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
